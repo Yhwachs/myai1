@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>🔥 Senin Ücretsiz NSFW Wan2.2 Video Dashboard</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background: linear-gradient(135deg, #000, #1a0d2e); 
+            color: #fff; 
+            padding: 20px; 
+            margin: 0;
+            min-height: 100vh;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        h1 { text-align: center; margin-bottom: 30px; font-size: 2.5em; text-shadow: 0 0 10px #ff00ff; color: #ff00ff; }
+        .password-section { text-align: center; margin: 50px 0; }
+        input[type="password"] { 
+            width: 250px; padding: 15px; font-size: 16px; 
+            border: 2px solid #ff00ff; border-radius: 25px; 
+            background: rgba(255,0,255,0.1); color: white;
+        }
+        input[type="password"]::placeholder { color: #aaa; }
+        button { 
+            padding: 15px 30px; font-size: 16px; margin-left: 10px; 
+            border: none; border-radius: 25px; cursor: pointer; 
+            background: linear-gradient(45deg, #ff00ff, #00ffff); 
+            color: black; transition: transform 0.3s;
+        }
+        button:hover { transform: scale(1.05); }
+        .dashboard { display: none; }
+        .tool { 
+            margin: 25px 0; padding: 25px; 
+            background: rgba(255,0,255,0.05); 
+            border-radius: 15px; border: 1px solid #ff00ff;
+            transition: all 0.3s;
+        }
+        .tool:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(255,0,255,0.2); }
+        .tool h2 { color: #ff00ff; margin-top: 0; }
+        .tool-btn { 
+            display: block; width: 100%; padding: 15px; 
+            text-decoration: none; text-align: center; 
+            background: linear-gradient(45deg, #ff1493, #00bfff); 
+            color: white; border-radius: 10px; 
+            font-size: 18px; margin: 10px 0;
+        }
+        .tool-btn:hover { background: linear-gradient(45deg, #00bfff, #ff1493); }
+        .warning { background: rgba(255,20,147,0.2); padding: 15px; border-radius: 10px; margin: 20px 0; }
+        @media (max-width: 768px) { .container { padding: 10px; } h1 { font-size: 2em; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔥 Ücretsiz NSFW Wan2.2 Image to Video</h1>
+        
+        <div class="password-section">
+            <input type="password" id="pass" placeholder="Şifre gir (varsayılan: 1234)">
+            <button onclick="checkPass()">Giriş Yap</button>
+        </div>
+
+        <div id="dashboard" class="dashboard">
+            <div class="warning">
+                <strong>✅ GitHub Pages Uyumlu – Sansürsüz Wan2.2 Araçları!</strong><br>
+                NSFW imaj yükle → Prompt yaz (ör: "slow sensual nude movement, 720p realistic skin, cinematic shadows") → 8-15 sn video indir (sınırsız, ücretsiz).<br>
+                Kaynaklar: Alibaba Wan AI tabanlı, 2025 güncel.
+            </div>
+
+            <div class="tool">
+                <h2>🎬 1. Wan2.2 Official Generator (En İyi Ücretsiz)</h2>
+                <p>Text/image to video, NSFW sınırsız, 720p HD</p>
+                <a href="https://wanvideogenerator.com/wan22" target="_blank" class="tool-btn">🚀 Şimdi Başlat (Yeni Sekme)</a>
+            </div>
+
+            <div class="tool">
+                <h2>⚡ 2. PixelDojo Wan2.2 NSFW (Uncensored Hızlı)</h2>
+                <p>Adult content için optimize, ultra-fast generation</p>
+                <a href="https://pixeldojo.ai/wan-nsfw-video" target="_blank" class="tool-btn">🚀 Şimdi Başlat (Yeni Sekme)</a>
+            </div>
+
+            <div class="tool">
+                <h2>🎨 3. SeaArt Wan2.2 (Cinematic NSFW)</h2>
+                <p>Yüksek kaliteli animasyon, natural motion</p>
+                <a href="https://www.seaart.ai/workFlowAppDetail/d3vj5t5e878c73c3g3d0" target="_blank" class="tool-btn">🚀 Şimdi Başlat (Yeni Sekme)</a>
+            </div>
+
+            <div class="tool">
+                <h2>💋 4. Wan2.ai Unrestricted (Sınırsız 720p)</h2>
+                <p>No restrictions, 8 sn videolar, LoRA support</p>
+                <a href="https://wan2.ai/" target="_blank" class="tool-btn">🚀 Şimdi Başlat (Yeni Sekme)</a>
+            </div>
+
+            <div class="tool" style="background: rgba(0,255,255,0.2);">
+                <h2>🆕 5. NsfwImg2Video (Ultimate Adult Creator)</h2>
+                <p>İmaj/text to porn video, Veo/Kling inspired</p>
+                <a href="https://www.nsfwimg2video.com/en" target="_blank" class="tool-btn">🚀 Şimdi Başlat (Yeni Sekme)</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function checkPass() {
+            const password = document.getElementById('pass').value;
+            if (password === '1234' || password === '') {
+                document.querySelector('.password-section').style.display = 'none';
+                document.getElementById('dashboard').style.display = 'block';
+                document.body.scrollTop = 0;
+            } else {
+                alert('❌ Yanlış şifre! (İpucu: 1234)');
+                document.getElementById('pass').value = '';
+            }
+        }
+        
+        document.getElementById('pass').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') checkPass();
+        });
+    </script>
+</body>
+</html>
